@@ -5,9 +5,37 @@ from werkzeug.utils import secure_filename
 app = Flask(__name__)
 app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
 
-'''@app.route('/')
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html'), 404
+
+@app.route('/')
 def home():
-    return render_template('index.html')'''
+    return render_template('index.html')
+
+@app.route('/index.html')
+def index():
+    return render_template('index.html')
+
+@app.route('/schedule.html')
+def schedule():
+    return render_template('schedule.html')
+
+@app.route('/humans.html')
+def humans():
+    return render_template('humans.html')
+
+@app.route('/contact.html')
+def contact():
+    return render_template('contact.html')
+
+@app.route('/about.html')
+def about():
+    return render_template('about.html')
+
+@app.route('/help.html')
+def help_page():
+    return render_template('help.html')
 
 UPLOAD_FOLDER = r'C:\Users\David\workspace\Test\begin'
 ALLOWED_EXTENSIONS = set(['txt', 'png', 'jpg', 'jpeg', 'gif', 'ics'])
@@ -18,39 +46,15 @@ def allowed_file(filename):
     return '.' in filename and \
            filename.rsplit('.', 1)[1] in ALLOWED_EXTENSIONS
            
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/upload.html', methods=['GET', 'POST'])
 def upload_file():
     if request.method == 'POST':
         schedule = request.files['file']
         if schedule and allowed_file(schedule.filename):
             filename = secure_filename(schedule.filename)
             schedule.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
-            return redirect(url_for('uploaded_file',
-                                    filename=filename))
-    return '''
-    <!doctype html>
-    <title>Upload new File</title>
-    <h1>Upload new File</h1>
-    <form action="" method="post" enctype="multipart/form-data">
-      <p><input type="file" name="file">
-         <input type=submit value=Upload>
-    </form>
-    '''
-
-@app.route('/upload', methods=['GET', 'POST'])
-def up_file():
-    if request.method == 'POST':
-        f = request.files['file']
-        f.save(UPLOAD_FOLDER)
-    return '''
-    <!doctype html>
-    <title>Upload new File</title>
-    <h1>Upload new File</h1>
-    <form action="" method="post" enctype="multipart/form-data">
-      <p><input type="file" name="file">
-         <input type=submit value=Upload>
-    </form>
-    '''
+            return render_template('index.html')
+    return render_template('upload.html')
 
 @app.route('/uploads/<filename>')
 def uploaded_file(filename):

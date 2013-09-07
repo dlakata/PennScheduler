@@ -1,0 +1,22 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Adel Qalieh -- Front End -- @adelq
+    Prakhar Bhandari -- Python Backend -- @pbjr23
+    David Lakata -- Database and Django -- @dlakata
+    Darshan Lingaraj -- APIs -- @dling?
+
+# THANKS
+
+    PennApps Organizers
+    Andrew Larkin
+    Kunal Malhotra
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    Bootstrap
+    Normalize.css, jQuery, Modernizr, FullCalendar.js
+    Python, Flask

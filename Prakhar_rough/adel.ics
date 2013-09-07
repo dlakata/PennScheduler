@@ -1,0 +1,264 @@
+BEGIN:VCALENDAR
+PRODID:1377827299420
+VERSION:2.0
+BEGIN:VEVENT
+DTSTAMP:20130830T014819Z
+DTSTART:20130902T100000
+DTEND:20130902T110000
+SUMMARY:BIOL121001
+DESCRIPTION:An intensive introductory lecture course covering the cell\, 
+ molecular biology\, biochemistry\, and the genetics of animals\, bacteri
+ a\, and viruses. This course is comparable to Biology 101\, but places g
+ reater emphasis on molecular mechanisms and experimental approaches. Par
+ ticular attention is given to the ways in which modern cell biological a
+ nd molecular genetic methods contribute to our understanding of evolutio
+ nary processes\, the mechanistic basis of human disease\, and recent bio
+ technological innovations. Students are encouraged to take BIOL 121 and 
+ 123 concurrently.
+LOCATION:LLAB 10
+RRULE:FREQ=WEEKLY;WKST=MO;INTERVAL=1;UNTIL=20131210;BYDAY=MO
+UID:20130830T014819Z-1377827299421@fe80:0:0:0:250:56ff:feb4:e3e%2
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20130830T014819Z
+DTSTART:20130828T100000
+DTEND:20130828T110000
+SUMMARY:BIOL121001
+DESCRIPTION:An intensive introductory lecture course covering the cell\, 
+ molecular biology\, biochemistry\, and the genetics of animals\, bacteri
+ a\, and viruses. This course is comparable to Biology 101\, but places g
+ reater emphasis on molecular mechanisms and experimental approaches. Par
+ ticular attention is given to the ways in which modern cell biological a
+ nd molecular genetic methods contribute to our understanding of evolutio
+ nary processes\, the mechanistic basis of human disease\, and recent bio
+ technological innovations. Students are encouraged to take BIOL 121 and 
+ 123 concurrently.
+LOCATION:LLAB 10
+RRULE:FREQ=WEEKLY;WKST=WE;INTERVAL=1;UNTIL=20131210;BYDAY=WE
+UID:20130830T014820Z-1377827299432@fe80:0:0:0:250:56ff:feb4:e3e%2
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20130830T014819Z
+DTSTART:20130830T100000
+DTEND:20130830T110000
+SUMMARY:BIOL121001
+DESCRIPTION:An intensive introductory lecture course covering the cell\, 
+ molecular biology\, biochemistry\, and the genetics of animals\, bacteri
+ a\, and viruses. This course is comparable to Biology 101\, but places g
+ reater emphasis on molecular mechanisms and experimental approaches. Par
+ ticular attention is given to the ways in which modern cell biological a
+ nd molecular genetic methods contribute to our understanding of evolutio
+ nary processes\, the mechanistic basis of human disease\, and recent bio
+ technological innovations. Students are encouraged to take BIOL 121 and 
+ 123 concurrently.
+LOCATION:LLAB 10
+RRULE:FREQ=WEEKLY;WKST=FR;INTERVAL=1;UNTIL=20131210;BYDAY=FR
+UID:20130830T014821Z-1377827299433@fe80:0:0:0:250:56ff:feb4:e3e%2
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20130830T014819Z
+DTSTART:20130902T090000
+DTEND:20130902T100000
+SUMMARY:BIOL121201
+DESCRIPTION:An intensive introductory lecture course covering the cell\, 
+ molecular biology\, biochemistry\, and the genetics of animals\, bacteri
+ a\, and viruses. This course is comparable to Biology 101\, but places g
+ reater emphasis on molecular mechanisms and experimental approaches. Par
+ ticular attention is given to the ways in which modern cell biological a
+ nd molecular genetic methods contribute to our understanding of evolutio
+ nary processes\, the mechanistic basis of human disease\, and recent bio
+ technological innovations. Students are encouraged to take BIOL 121 and 
+ 123 concurrently.
+LOCATION:LLAB 10
+RRULE:FREQ=WEEKLY;WKST=MO;INTERVAL=1;UNTIL=20131210;BYDAY=MO
+UID:20130830T014822Z-1377827299434@fe80:0:0:0:250:56ff:feb4:e3e%2
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20130830T014819Z
+DTSTART:20130903T130000
+DTEND:20130903T160000
+SUMMARY:BIOL123105
+DESCRIPTION:An intensive introductory laboratory course emphasizing how m
+ olecular biology has revolutionized our understanding of cell and organi
+ sm functions. BIOL 121 and 123 must be taken concurrently.
+LOCATION:GLAB 400
+RRULE:FREQ=WEEKLY;WKST=TU;INTERVAL=1;UNTIL=20131210;BYDAY=TU
+UID:20130830T014823Z-1377827299436@fe80:0:0:0:250:56ff:feb4:e3e%2
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20130830T014819Z
+DTSTART:20130902T110000
+DTEND:20130902T120000
+SUMMARY:CIS 120001
+DESCRIPTION:A fast-paced introduction to the fundamental concepts of prog
+ ramming and software design. This course assumes some previous programmi
+ ng experience\, at the level of a high school computer science class or 
+ CIS110. (If you got at least 4 in the AP Computer Science A or AB exam\,
+  you will do great.) No specific programming language background is assu
+ med: basic experience with any language (for instance Java\, C\, C++\, V
+ B\, Python\, Perl\, or Scheme) is fine. If you have never programmed bef
+ ore\, you should take CIS 110 first.
+LOCATION:TOWN 100
+RRULE:FREQ=WEEKLY;WKST=MO;INTERVAL=1;UNTIL=20131210;BYDAY=MO
+UID:20130830T014824Z-1377827299437@fe80:0:0:0:250:56ff:feb4:e3e%2
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20130830T014819Z
+DTSTART:20130828T110000
+DTEND:20130828T120000
+SUMMARY:CIS 120001
+DESCRIPTION:A fast-paced introduction to the fundamental concepts of prog
+ ramming and software design. This course assumes some previous programmi
+ ng experience\, at the level of a high school computer science class or 
+ CIS110. (If you got at least 4 in the AP Computer Science A or AB exam\,
+  you will do great.) No specific programming language background is assu
+ med: basic experience with any language (for instance Java\, C\, C++\, V
+ B\, Python\, Perl\, or Scheme) is fine. If you have never programmed bef
+ ore\, you should take CIS 110 first.
+LOCATION:TOWN 100
+RRULE:FREQ=WEEKLY;WKST=WE;INTERVAL=1;UNTIL=20131210;BYDAY=WE
+UID:20130830T014825Z-1377827299438@fe80:0:0:0:250:56ff:feb4:e3e%2
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20130830T014819Z
+DTSTART:20130830T110000
+DTEND:20130830T120000
+SUMMARY:CIS 120001
+DESCRIPTION:A fast-paced introduction to the fundamental concepts of prog
+ ramming and software design. This course assumes some previous programmi
+ ng experience\, at the level of a high school computer science class or 
+ CIS110. (If you got at least 4 in the AP Computer Science A or AB exam\,
+  you will do great.) No specific programming language background is assu
+ med: basic experience with any language (for instance Java\, C\, C++\, V
+ B\, Python\, Perl\, or Scheme) is fine. If you have never programmed bef
+ ore\, you should take CIS 110 first.
+LOCATION:TOWN 100
+RRULE:FREQ=WEEKLY;WKST=FR;INTERVAL=1;UNTIL=20131210;BYDAY=FR
+UID:20130830T014826Z-1377827299439@fe80:0:0:0:250:56ff:feb4:e3e%2
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20130830T014819Z
+DTSTART:20130829T160000
+DTEND:20130829T170000
+SUMMARY:CIS 120208
+DESCRIPTION:A fast-paced introduction to the fundamental concepts of prog
+ ramming and software design. This course assumes some previous programmi
+ ng experience\, at the level of a high school computer science class or 
+ CIS110. (If you got at least 4 in the AP Computer Science A or AB exam\,
+  you will do great.) No specific programming language background is assu
+ med: basic experience with any language (for instance Java\, C\, C++\, V
+ B\, Python\, Perl\, or Scheme) is fine. If you have never programmed bef
+ ore\, you should take CIS 110 first.
+LOCATION:MOOR 100A
+RRULE:FREQ=WEEKLY;WKST=TH;INTERVAL=1;UNTIL=20131210;BYDAY=TH
+UID:20130830T014827Z-1377827299440@fe80:0:0:0:250:56ff:feb4:e3e%2
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20130830T014819Z
+DTSTART:20130902T130000
+DTEND:20130902T140000
+SUMMARY:ECON001003
+DESCRIPTION:Introduction to economic analysis and its application. Theory
+  of supply and demand\, costs and revenues of the firm under perfect com
+ petition\, monopoly and oligopoly\, pricing of factors of production\, i
+ ncome distribution\, and theory of international trade. Econ 1 deals pri
+ marily with microeconomics.
+LOCATION:COHN G17
+RRULE:FREQ=WEEKLY;WKST=MO;INTERVAL=1;UNTIL=20131210;BYDAY=MO
+UID:20130830T014828Z-1377827299441@fe80:0:0:0:250:56ff:feb4:e3e%2
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20130830T014819Z
+DTSTART:20130828T130000
+DTEND:20130828T140000
+SUMMARY:ECON001003
+DESCRIPTION:Introduction to economic analysis and its application. Theory
+  of supply and demand\, costs and revenues of the firm under perfect com
+ petition\, monopoly and oligopoly\, pricing of factors of production\, i
+ ncome distribution\, and theory of international trade. Econ 1 deals pri
+ marily with microeconomics.
+LOCATION:COHN G17
+RRULE:FREQ=WEEKLY;WKST=WE;INTERVAL=1;UNTIL=20131210;BYDAY=WE
+UID:20130830T014829Z-1377827299443@fe80:0:0:0:250:56ff:feb4:e3e%2
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20130830T014819Z
+DTSTART:20130830T130000
+DTEND:20130830T140000
+SUMMARY:ECON001222
+DESCRIPTION:Introduction to economic analysis and its application. Theory
+  of supply and demand\, costs and revenues of the firm under perfect com
+ petition\, monopoly and oligopoly\, pricing of factors of production\, i
+ ncome distribution\, and theory of international trade. Econ 1 deals pri
+ marily with microeconomics.
+LOCATION:MEYH B6
+RRULE:FREQ=WEEKLY;WKST=FR;INTERVAL=1;UNTIL=20131210;BYDAY=FR
+UID:20130830T014830Z-1377827299444@fe80:0:0:0:250:56ff:feb4:e3e%2
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20130830T014819Z
+DTSTART:20130903T090000
+DTEND:20130903T103000
+SUMMARY:HSOC052301
+DESCRIPTION:The CDC estimates that 1 in 150 children have autism. Three d
+ ecades ago\, this number was 1 in 5\,000. The communities in which these
+  children are identified in ever increasing numbers are ill prepared to 
+ meet their needs. Scientists have struggled to understand the causes of 
+ this disorder\, its treatment\, and why it appears to be rapidly increas
+ ing. Families\, policy makers\, schools and the healthcare system have a
+ rgued bitterly in the press and in the courts about the best way to cre 
+ for these children and the best ways to pay for this care. In this class
+ \, we will use autism as a case study to understnad how psychiatric and 
+ developmental disorders of childhood come to be defined over time\, thei
+ r biologocal and environmental causes identified\, and treatments develo
+ ped. We will also discuss the identification and care of these children 
+ in the broader context of the American education and healthcare systems.
+ 
+LOCATION:COHN 337
+RRULE:FREQ=WEEKLY;WKST=TU;INTERVAL=1;UNTIL=20131210;BYDAY=TU
+UID:20130830T014831Z-1377827299445@fe80:0:0:0:250:56ff:feb4:e3e%2
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20130830T014819Z
+DTSTART:20130829T090000
+DTEND:20130829T103000
+SUMMARY:HSOC052301
+DESCRIPTION:The CDC estimates that 1 in 150 children have autism. Three d
+ ecades ago\, this number was 1 in 5\,000. The communities in which these
+  children are identified in ever increasing numbers are ill prepared to 
+ meet their needs. Scientists have struggled to understand the causes of 
+ this disorder\, its treatment\, and why it appears to be rapidly increas
+ ing. Families\, policy makers\, schools and the healthcare system have a
+ rgued bitterly in the press and in the courts about the best way to cre 
+ for these children and the best ways to pay for this care. In this class
+ \, we will use autism as a case study to understnad how psychiatric and 
+ developmental disorders of childhood come to be defined over time\, thei
+ r biologocal and environmental causes identified\, and treatments develo
+ ped. We will also discuss the identification and care of these children 
+ in the broader context of the American education and healthcare systems.
+ 
+LOCATION:COHN 337
+RRULE:FREQ=WEEKLY;WKST=TH;INTERVAL=1;UNTIL=20131210;BYDAY=TH
+UID:20130830T014832Z-1377827299446@fe80:0:0:0:250:56ff:feb4:e3e%2
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20130830T014819Z
+DTSTART:20130824T153000
+DTEND:20130824T163000
+SUMMARY:PREC102001
+DESCRIPTION:https://secure.www.upenn.edu/nso/preceptorial-overview.html
+LOCATION:TBA TBA
+RRULE:FREQ=WEEKLY;WKST=SA;INTERVAL=1;UNTIL=20130824;BYDAY=SA
+UID:20130830T014833Z-1377827299447@fe80:0:0:0:250:56ff:feb4:e3e%2
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20130830T014819Z
+DTSTART:20130824T163000
+DTEND:20130824T180000
+SUMMARY:PREC131001
+DESCRIPTION:https://secure.www.upenn.edu/nso/preceptorial-overview.html
+LOCATION:TBA TBA
+RRULE:FREQ=WEEKLY;WKST=SA;INTERVAL=1;UNTIL=20130824;BYDAY=SA
+UID:20130830T014834Z-1377827299448@fe80:0:0:0:250:56ff:feb4:e3e%2
+END:VEVENT
+END:VCALENDAR

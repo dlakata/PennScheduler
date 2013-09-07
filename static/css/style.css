@@ -1,0 +1,28 @@
+html {
+    background-image: url('http://25.media.tumblr.com/88a5e8c5b4b76f7bced06e7d6195eeba/tumblr_mq7emjlEUK1st5lhmo1_1280.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+body {
+    padding-top: 20px;
+    background: none;
+}
+.jumbotron {
+    opacity: 0.95;
+    padding-top: 6%;
+}
+.jumbotron p {
+    padding-bottom: 20px;
+}
+.footer {
+    padding-top: 5px;
+    font-family: 'Rancho', cursive;
+    color: #444;
+    font-size: 30px;
+}
+.navbar-brand {
+    font-family: 'Open Sans', sans-serif;
+}
+.well {
+    opacity: 0.95;
+}
