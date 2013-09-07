@@ -1,0 +1,236 @@
+BEGIN:VCALENDAR
+PRODID:1378517032104
+VERSION:2.0
+BEGIN:VEVENT
+DTSTAMP:20130907T012352Z
+DTSTART:20130903T103000
+DTEND:20130903T120000
+SUMMARY:EAS 203001
+DESCRIPTION:The practice of engineering requires more than creativity\, d
+ iligence\, and technical knowledge: it demands the tools to manage the c
+ onflicting needs of clients\, managers\, and the public\; an ability to 
+ act responsibly when problems arise\; and\, above all\, strong communica
+ tion skills. This course will examine the major ethical issues associate
+ d with engineering practice while enhancing students' technical writing.
+  Through the study of important case studies like the Great Molasses Flo
+ od\, the Space Shuttle Challenger disaster\, and the Deepwater Horizon o
+ il spill\, we will learn about the responsibilities of engineering profe
+ ssionals\, as well as the causes and consequences of technological failu
+ re.
+LOCATION:LRSM AUD
+RRULE:FREQ=WEEKLY;WKST=TU;INTERVAL=1;UNTIL=20131210;BYDAY=TU
+UID:20130907T012352Z-1378517032105@fe80:0:0:0:250:56ff:feb4:e48%2
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20130907T012352Z
+DTSTART:20130829T103000
+DTEND:20130829T120000
+SUMMARY:EAS 203001
+DESCRIPTION:The practice of engineering requires more than creativity\, d
+ iligence\, and technical knowledge: it demands the tools to manage the c
+ onflicting needs of clients\, managers\, and the public\; an ability to 
+ act responsibly when problems arise\; and\, above all\, strong communica
+ tion skills. This course will examine the major ethical issues associate
+ d with engineering practice while enhancing students' technical writing.
+  Through the study of important case studies like the Great Molasses Flo
+ od\, the Space Shuttle Challenger disaster\, and the Deepwater Horizon o
+ il spill\, we will learn about the responsibilities of engineering profe
+ ssionals\, as well as the causes and consequences of technological failu
+ re.
+LOCATION:LEVH 101
+RRULE:FREQ=WEEKLY;WKST=TH;INTERVAL=1;UNTIL=20131210;BYDAY=TH
+UID:20130907T012353Z-1378517032116@fe80:0:0:0:250:56ff:feb4:e48%2
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20130907T012352Z
+DTSTART:20130830T140000
+DTEND:20130830T150000
+SUMMARY:EAS 203204
+DESCRIPTION:The practice of engineering requires more than creativity\, d
+ iligence\, and technical knowledge: it demands the tools to manage the c
+ onflicting needs of clients\, managers\, and the public\; an ability to 
+ act responsibly when problems arise\; and\, above all\, strong communica
+ tion skills. This course will examine the major ethical issues associate
+ d with engineering practice while enhancing students' technical writing.
+  Through the study of important case studies like the Great Molasses Flo
+ od\, the Space Shuttle Challenger disaster\, and the Deepwater Horizon o
+ il spill\, we will learn about the responsibilities of engineering profe
+ ssionals\, as well as the causes and consequences of technological failu
+ re.
+LOCATION:TOWN 307
+RRULE:FREQ=WEEKLY;WKST=FR;INTERVAL=1;UNTIL=20131210;BYDAY=FR
+UID:20130907T012354Z-1378517032117@fe80:0:0:0:250:56ff:feb4:e48%2
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20130907T012352Z
+DTSTART:20130902T100000
+DTEND:20130902T110000
+SUMMARY:ECON001001
+DESCRIPTION:Introduction to economic analysis and its application. Theory
+  of supply and demand\, costs and revenues of the firm under perfect com
+ petition\, monopoly and oligopoly\, pricing of factors of production\, i
+ ncome distribution\, and theory of international trade. Econ 1 deals pri
+ marily with microeconomics.
+LOCATION:COHN G17
+RRULE:FREQ=WEEKLY;WKST=MO;INTERVAL=1;UNTIL=20131210;BYDAY=MO
+UID:20130907T012355Z-1378517032118@fe80:0:0:0:250:56ff:feb4:e48%2
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20130907T012352Z
+DTSTART:20130828T100000
+DTEND:20130828T110000
+SUMMARY:ECON001001
+DESCRIPTION:Introduction to economic analysis and its application. Theory
+  of supply and demand\, costs and revenues of the firm under perfect com
+ petition\, monopoly and oligopoly\, pricing of factors of production\, i
+ ncome distribution\, and theory of international trade. Econ 1 deals pri
+ marily with microeconomics.
+LOCATION:COHN G17
+RRULE:FREQ=WEEKLY;WKST=WE;INTERVAL=1;UNTIL=20131210;BYDAY=WE
+UID:20130907T012356Z-1378517032119@fe80:0:0:0:250:56ff:feb4:e48%2
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20130907T012352Z
+DTSTART:20130830T120000
+DTEND:20130830T130000
+SUMMARY:ECON001214
+DESCRIPTION:Introduction to economic analysis and its application. Theory
+  of supply and demand\, costs and revenues of the firm under perfect com
+ petition\, monopoly and oligopoly\, pricing of factors of production\, i
+ ncome distribution\, and theory of international trade. Econ 1 deals pri
+ marily with microeconomics.
+LOCATION:MEYH B7
+RRULE:FREQ=WEEKLY;WKST=FR;INTERVAL=1;UNTIL=20131210;BYDAY=FR
+UID:20130907T012357Z-1378517032121@fe80:0:0:0:250:56ff:feb4:e48%2
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20130907T012352Z
+DTSTART:20130902T163000
+DTEND:20130902T180000
+SUMMARY:ESE 111001
+DESCRIPTION:Introduction to the principles underlying electrical and syst
+ ems engineering. Concepts used in designing circuits\, processing signal
+ s on analog and digital devices\, implementing computatin on embedded sy
+ stems\, analyzing communication networks\, and understanding complex sys
+ tems will be discussed in lectures and illustrated in the laboratory. Th
+ is course provides an overview of the challenges and tools that Electric
+ al Engineers and Systems Engineers address and some of the necessary fou
+ ndations for students interested in more advanced courses in ESE.
+LOCATION:TOWN 303
+RRULE:FREQ=WEEKLY;WKST=MO;INTERVAL=1;UNTIL=20131210;BYDAY=MO
+UID:20130907T012358Z-1378517032122@fe80:0:0:0:250:56ff:feb4:e48%2
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20130907T012352Z
+DTSTART:20130828T163000
+DTEND:20130828T180000
+SUMMARY:ESE 111001
+DESCRIPTION:Introduction to the principles underlying electrical and syst
+ ems engineering. Concepts used in designing circuits\, processing signal
+ s on analog and digital devices\, implementing computatin on embedded sy
+ stems\, analyzing communication networks\, and understanding complex sys
+ tems will be discussed in lectures and illustrated in the laboratory. Th
+ is course provides an overview of the challenges and tools that Electric
+ al Engineers and Systems Engineers address and some of the necessary fou
+ ndations for students interested in more advanced courses in ESE.
+LOCATION:TOWN 303
+RRULE:FREQ=WEEKLY;WKST=WE;INTERVAL=1;UNTIL=20131210;BYDAY=WE
+UID:20130907T012359Z-1378517032123@fe80:0:0:0:250:56ff:feb4:e48%2
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20130907T012352Z
+DTSTART:20130902T110000
+DTEND:20130902T120000
+SUMMARY:MATH114004
+DESCRIPTION:Functions of several variables\, vector-valued functions\, pa
+ rtial derivatives and applications\, double and triple integrals\, conic
+  sections\, polar coordinates\, vectors and vector calculus\, first orde
+ r ordinary differential equations. Applications to physical sciences. Us
+ e of symbolic manipulation and graphics software in calculus.
+LOCATION:DRLB A1
+RRULE:FREQ=WEEKLY;WKST=MO;INTERVAL=1;UNTIL=20131210;BYDAY=MO
+UID:20130907T012400Z-1378517032124@fe80:0:0:0:250:56ff:feb4:e48%2
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20130907T012352Z
+DTSTART:20130828T110000
+DTEND:20130828T120000
+SUMMARY:MATH114004
+DESCRIPTION:Functions of several variables\, vector-valued functions\, pa
+ rtial derivatives and applications\, double and triple integrals\, conic
+  sections\, polar coordinates\, vectors and vector calculus\, first orde
+ r ordinary differential equations. Applications to physical sciences. Us
+ e of symbolic manipulation and graphics software in calculus.
+LOCATION:DRLB A1
+RRULE:FREQ=WEEKLY;WKST=WE;INTERVAL=1;UNTIL=20131210;BYDAY=WE
+UID:20130907T012401Z-1378517032125@fe80:0:0:0:250:56ff:feb4:e48%2
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20130907T012352Z
+DTSTART:20130830T110000
+DTEND:20130830T120000
+SUMMARY:MATH114004
+DESCRIPTION:Functions of several variables\, vector-valued functions\, pa
+ rtial derivatives and applications\, double and triple integrals\, conic
+  sections\, polar coordinates\, vectors and vector calculus\, first orde
+ r ordinary differential equations. Applications to physical sciences. Us
+ e of symbolic manipulation and graphics software in calculus.
+LOCATION:DRLB A1
+RRULE:FREQ=WEEKLY;WKST=FR;INTERVAL=1;UNTIL=20131210;BYDAY=FR
+UID:20130907T012402Z-1378517032126@fe80:0:0:0:250:56ff:feb4:e48%2
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20130907T012352Z
+DTSTART:20130903T083000
+DTEND:20130903T093000
+SUMMARY:MATH114231
+DESCRIPTION:Functions of several variables\, vector-valued functions\, pa
+ rtial derivatives and applications\, double and triple integrals\, conic
+  sections\, polar coordinates\, vectors and vector calculus\, first orde
+ r ordinary differential equations. Applications to physical sciences. Us
+ e of symbolic manipulation and graphics software in calculus.
+LOCATION:DRLB 4E19
+RRULE:FREQ=WEEKLY;WKST=TU;INTERVAL=1;UNTIL=20131210;BYDAY=TU
+UID:20130907T012403Z-1378517032128@fe80:0:0:0:250:56ff:feb4:e48%2
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20130907T012352Z
+DTSTART:20130902T180000
+DTEND:20130902T200000
+SUMMARY:PHYS050163
+DESCRIPTION:Experiments in classical mechanics.
+LOCATION:DRLB LAB
+RRULE:FREQ=WEEKLY;WKST=MO;INTERVAL=1;UNTIL=20131210;BYDAY=MO
+UID:20130907T012404Z-1378517032129@fe80:0:0:0:250:56ff:feb4:e48%2
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20130907T012352Z
+DTSTART:20130824T153000
+DTEND:20130824T163000
+SUMMARY:PREC101001
+DESCRIPTION:https://secure.www.upenn.edu/nso/preceptorial-overview.html
+LOCATION:TBA TBA
+RRULE:FREQ=WEEKLY;WKST=SA;INTERVAL=1;UNTIL=20130824;BYDAY=SA
+UID:20130907T012405Z-1378517032130@fe80:0:0:0:250:56ff:feb4:e48%2
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20130907T012352Z
+DTSTART:20130903T133000
+DTEND:20130903T150000
+SUMMARY:WRIT039307
+DESCRIPTION:
+LOCATION:DRLB 2C2
+RRULE:FREQ=WEEKLY;WKST=TU;INTERVAL=1;UNTIL=20131210;BYDAY=TU
+UID:20130907T012406Z-1378517032131@fe80:0:0:0:250:56ff:feb4:e48%2
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20130907T012352Z
+DTSTART:20130829T133000
+DTEND:20130829T150000
+SUMMARY:WRIT039307
+DESCRIPTION:
+LOCATION:DRLB 2C2
+RRULE:FREQ=WEEKLY;WKST=TH;INTERVAL=1;UNTIL=20131210;BYDAY=TH
+UID:20130907T012407Z-1378517032132@fe80:0:0:0:250:56ff:feb4:e48%2
+END:VEVENT
+END:VCALENDAR
