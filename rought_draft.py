@@ -75,7 +75,7 @@ for component in cal_prakhar.walk():
 		end_time = component.get('DTEND').dt
 		end_time = str(end_time)[11:16]
 
-		# print course_name, day_of_week, start_time, end_time
+		print course_name, day_of_week, start_time, end_time
 
 for component in cal_adel.walk():
 	if component.name == "VEVENT":
@@ -112,7 +112,7 @@ for component in cal_greg.walk():
 		end_time = str(end_time)[11:16]
 
 
-		# print course_name, day_of_week, start_time, end_time
+		print course_name, day_of_week, start_time, end_time
 
 for component in cal_evan.walk():
 	if component.name == "VEVENT":
@@ -131,7 +131,7 @@ for component in cal_evan.walk():
 		end_time = str(end_time)[11:16]
 
 
-		# print course_name, day_of_week, start_time, end_time
+		print course_name, day_of_week, start_time, end_time
 
 for component in cal_miguel.walk():
 	if component.name == "VEVENT":
@@ -150,7 +150,7 @@ for component in cal_miguel.walk():
 		end_time = str(end_time)[11:16]
 
 
-		# print course_name, day_of_week, start_time, end_time
+		print course_name, day_of_week, start_time, end_time
 
 
 # print prakhar_courses
