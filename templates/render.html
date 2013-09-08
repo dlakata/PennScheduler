@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="well">
+      <div class="text-center">
+	<div class="btn-group" style="padding-bottom: 1%;">
+	  <button type="button" class="btn btn-default">Shared Classes</button>
+	  <button type="button" class="btn btn-default">Free Time</button>
+	</div>
+	<div id="calendar"></div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+{% block scripts %}
+	<link rel="stylesheet" href="/static/css/fullcalendar.css">
+	<script type="text/javascript" src="/static/js/vendor/fullcalendar.min.js"></script>
+	<script>
+	  $(document).ready(function() {
+	  // page now ready
+	    $('#calendar').fullCalendar({
+	      header: false, // No top title header
+	      defaultView: 'agendaWeek', // Week view
+	      allDaySlot: false, // No all day events
+	      minTime: 8, // Calendar starts at 8am
+	      maxTime: 22, // Calendar goes up to 10pm
+	      aspectRatio: 2, // Make calendar more horizontally compact
+	      //columnFormat: 'ddd', // hide number of day and month
+	      year: 2013,
+	      month: 8,
+	      date: 7,
+	      height: 620,
+	      events: [
+	  { title:'CIS120',start:'2013-09-02 13:00:00', allDay: false},
+	  { title:'CIS120',start:'2013-09-04 13:00:00', allDay: false},
+	  { title:'CIS120',start:'2013-09-06 13:00:00', allDay: false},
+	  {{ name | safe }}
+	      ]
+	    })
+	  });
+	</script>
+{% endblock %}

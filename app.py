@@ -1,4 +1,4 @@
-import os
+import os, freeTime, sharedclass
 from flask import Flask, render_template, redirect, request, url_for, send_from_directory
 from werkzeug.utils import secure_filename
 from icalendar import Calendar, Event
@@ -34,6 +34,11 @@ def contact():
 def about():
     return render_template('about.html')
 
+@app.route('/render')
+@app.route('/render/<name>')
+def render(name=None):
+    return render_template('render.html', name=name)
+
 @app.route('/help.html')
 def help_page():
     return render_template('help.html')
@@ -63,7 +68,11 @@ def upload_file():
 #            name.append(request.form["fullname-" + str(i+1)])
 #            schedule.append((request.files['file-' + str(i+1)]).stream.read())
             d[request.form["fullname-" + str(i+1)]] = (request.files['file-' + str(i+1)]).stream.read()
-        print d
+        foo = sharedclass.shared(d)
+#         fur = sharedclass.shared(d)
+#         return fur
+        return redirect(url_for('render', name=foo))
+        # return freeTime.freeFormat(freeTime.generalFreetime(freeTime.free_time_parse(d)))
 #         name1 = request.form['name1']
 #         schedule1 = request.files['file1']
 #         name2 = request.form['name2']
