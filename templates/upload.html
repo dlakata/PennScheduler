@@ -1,22 +1,30 @@
 {% extends "layout.html" %}
 {% block content %}
+<style>
+.name {
+	padding-top: 15px;
+}
+@media (min-width: 1170px) {
+	.name {
+		padding-bottom: 30px;
+	}
+}
+</style>
     <div class="well">
       <div class="text-center">
 	<h1>Upload</h1>
-	<form action="" method="POST" enctype="multipart/form-data">
-	  <p><div class="inputs">
-	    <div class="form-group">
-	      <label>Full name</label>
-	      <input type="text" class="form-control col-lg-4" placeholder="Full Name" name="fullname-1">
+	<div class="row"><div class="col-md-6 col-md-offset-3"><form action="" method="POST" enctype="multipart/form-data">
+	  <div class="inputs" style="padding-bottom:15px;">
+	    <div class="form-group name">
+	      <input type="text" class="form-control col-lg-4" placeholder="Name" name="fullname-1">
 	    </div>
-	    <div class="form-group">
-	      <input type="file" name="file-1">
-	    </div>
-	  </div></p>
+	    <div class="fullname"><input style="margin:0 auto;" class="btn btn-primary" type="file" name="file-1"></div>
+	  </div>
 	  <input type="hidden" name="id" id="numElements" value="" />
-	  <a class="btn btn-success btn-add">Add Input</a>
+	  <a class="btn btn-success btn-add">Add user</a>
 	  <input class="btn btn-primary" type="submit" value="Submit">
 	</form>
+	</div></div>
       </div>
     </div>
   </div>
@@ -27,7 +35,7 @@
 	  $(".btn-add").click(function() {
 	    id++;
 	    document.getElementById('numElements').value = id;
-	  $("<div class='form-group'><label>Full name</label><input type='text' class='form-control col-lg-4' placeholder='Full Name' name='fullname-" + id + "'></div><div class='form-group'><input type='file' name='file-" + id + "'></div>").appendTo(".inputs");
+	  $("<div class='form-group name'><input type='text' class='form-control col-lg-4' placeholder='Name' name='fullname-" + id + "'></div><input style='margin:0 auto;' class='btn btn-primary fullname' type='file' name='file-" + id + "'>").appendTo(".inputs")
 	  });
 	</script>
 {% endblock %}

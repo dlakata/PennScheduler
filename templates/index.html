@@ -1,16 +1,49 @@
 {% extends "layout.html" %}
 {% block content %}
+  <style>
+  .lead {
+    padding-top: 2%;
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    color: #285e8e;
+  }
+  .ace p {
+    font-size: 16px;
+    padding-bottom: 20px;
+  }
+  </style>
     <div class="jumbotron">
       <h1>Scheduling with friends</h1>
       <p>Find shared classes and when your friends are free</p>
       <a href="schedule.html" class="btn btn-primary btn-lg">Start a Shared Schedule</a>
     </div>
+  <div class="well">
+    <div class="row">
+      <div class="col-md-7 ace">
+        <div class="lead" style="padding-top:40px;">
+          Find shared classes with each other
+        </div>
+        <p>No more endless Facebook posts at the start of each semester posting schedules to find out who else shares a class with you</p>
+        <div class="lead">
+          Easier event planning
+        </div>
+        <p>No need to go back and forth with every person and deciding to cancel last minute because a class came up</p>
+        <div class="lead">
+          Share the link with friends
+        </div>
+        <p>Currently on localhost, link sharing on the web coming soon. For now, you can bookmark the link for future reference</p>
+      </div>
+      <div class="col-md-5">
+        <img src="/static/img/demo.png" style="max-width:100%">
+      </div>
+    </div>
+  </div>
     <div class="row">
       <div class="col-md-6">
 	<div class="well">
 	  <h2>Technologies</h2>
 	  <p>PennSchedule is built on the Flask web framework and stores none of your personal information on the cloud. Backend is mainly Python, though front end rendering with Javascript utilized as well.</p>
-	  <a href="humans.html" class="btn btn-info">More info</a>
+	  <a href="about.html" class="btn btn-info">More info</a>
 	</div>
       </div>
       <div class="col-md-6">

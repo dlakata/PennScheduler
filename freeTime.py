@@ -76,7 +76,7 @@ def final_time_range(time1,time2,day):
 
 def rev_time_analyze(numb):
 	if numb == 204:
-		return "23:55:00"
+		return "22:00:00"
 	hour = (numb / 12) + 7
 	minutes = (numb % 12) * 5
 	if len(str(hour)) == 1:
@@ -219,7 +219,7 @@ def generalFreetime(freetimeDict):
 def freeFormat(listlist):
 	final = ""
 	for block in listlist:
-		final += "{ title: '%s', start:'%s', end:'%s', allDay: false, backgroundColor:'%s'},\n" % (block[0], block[1][0], block[1][1], colors.choose_color(block[0].count(',')+1,block[2]))
+		final += "{ title: '%s', start:'%s', end:'%s', allDay: false, backgroundColor:'%s', description:'fur'},\n" % (block[0], block[1][0], block[1][1], colors.choose_color(block[0].count(',')+1,block[2]))
 	return final[:-2]
 # print freetime(free)
 # print freetime(furp)

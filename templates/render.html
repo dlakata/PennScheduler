@@ -3,10 +3,11 @@
 	<div class="well">
 	  <div class="text-center">
 	<div class="btn-group" style="padding-bottom: 1%;">
-	  <button type="button" class="btn btn-default" id="shared">Shared Classes</button>
+	  <button type="button" class="btn btn-default active" id="shared">Shared Classes</button>
 	  <button type="button" class="btn btn-default" id="free">Free Time</button>
 	</div>
 	<div id="calendar"></div>
+	<!-- <a class="download_link">Download now</a> -->
 	  </div>
 	</div>
   </div>
@@ -23,11 +24,21 @@
 		$('#free').click(function() {
 			$('#calendar').fullCalendar( 'removeEventSource', nate);
 			$('#calendar').fullCalendar( 'addEventSource', furp);
+			$('#shared').removeClass('active');
+			$('#free').addClass('active');
 		})
 		$('#shared').click(function() {
 			$('#calendar').fullCalendar( 'removeEventSource', furp);
 			$('#calendar').fullCalendar( 'addEventSource', nate);
+			$('#shared').addClass('active');
+			$('#free').removeClass('active');
 		})
+		// $('.download_link').click(function() {
+		// 	$('#calendar').css({
+		// 		'font-size': '20px',
+		// 		font-family: 'Open Sans'
+		// 	})
+		// })
 		$('#calendar').fullCalendar({
 		  header: false, // No top title header
 		  defaultView: 'agendaWeek', // Week view

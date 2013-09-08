@@ -1,3 +1,28 @@
 {% extends "layout.html" %}
 {% block content %}
+<style>
+.flip-vertical {
+    -moz-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    transform: scaleY(-1);
+    -ms-filter: flipv; /*IE*/
+    filter: flipv; /*IE*/
+    clip:rect(500px,0,700px, 0);
+}
+</style>
+<div class="well">
+	<div class="text-center">
+		<img class="img-rounded" src="/static/img/group_photo_edit.jpg" style="max-width: 100%;">
+		<br>
+		<small><em>From left to right: Darshan, Prakhar, Adel, David</em></small>
+		<h3>About the Team</h3>
+		<p>The team members are proud students at the University of Pennsylvania. David is a freshman in the College and the School of Engineering and is pursuing a dual-degree in Electrical Engineering and Physics. Prakhar is a freshman in the School of Engineering and is majoring in Computer Science. Adel is a freshman in the College and is majoring in Chemistry. Last, but not least, Darshan is a second year graduate student in Computer Science.
+		<h3>About the app</h3>
+		<p>Created at PennApps Fall 2013, PennSchedule started from a simple idea to easily find out which of your friends are in your classes and your friends are free. It provides an elegant solution that runs on the Flask framework with a Python backend.</p>
+
+
+</p>
+	</div>
+</div>
 {% endblock %}
