@@ -1,3 +1,4 @@
+import colors
 from itertools import combinations
 from itertools import groupby
 from operator import itemgetter
@@ -75,7 +76,7 @@ def final_time_range(time1,time2,day):
 
 def rev_time_analyze(numb):
 	if numb == 204:
-		return "00:00"
+		return "23:55:00"
 	hour = (numb / 12) + 7
 	minutes = (numb % 12) * 5
 	if len(str(hour)) == 1:
@@ -83,6 +84,8 @@ def rev_time_analyze(numb):
 	if len(str(minutes)) == 1:
 		minutes = "0" + str(minutes)
 	return str(hour) + ":" + str(minutes) + ":" + "00"
+
+
 
 def rev_day(listy):
 	"""
@@ -199,7 +202,7 @@ def generalFreetime(freetimeDict):
 	fullSet = rangeMaker(fullSet)
 	# Add to database
 	for i in fullSet:
-		freetimeDatabase.append([everybody, rev_day(i)])
+		freetimeDatabase.append([everybody, rev_day(i),everybody.count(',')+1])
 
 	for numComparing in range(len(freetimeDict.items()) - 1, 1, -1):
 		for combination in combinations(freetimeDict.items(), numComparing):
@@ -210,14 +213,13 @@ def generalFreetime(freetimeDict):
 			partialset = rangeMaker(subsetLists)
 			# Add partial items to database
 			for i in partialset:
-				freetimeDatabase.append([", ".join(firstTuple(combination)),rev_day(i)])
-
+				freetimeDatabase.append([", ".join(firstTuple(combination)),rev_day(i),everybody.count(',')+1])
 	return freetimeDatabase
 
 def freeFormat(listlist):
 	final = ""
 	for block in listlist:
-		final += "{ title: '%s', start:'%s', end:'%s', allDay: false},\n" % (block[0], block[1][0], block[1][1])
+		final += "{ title: '%s', start:'%s', end:'%s', allDay: false, backgroundColor:'%s'},\n" % (block[0], block[1][0], block[1][1], colors.choose_color(block[0].count(',')+1,block[2]))
 	return final[:-2]
 # print freetime(free)
 # print freetime(furp)
