@@ -38,33 +38,34 @@ classdays = {}
 
 def findTimes(name, schedule):
     schedule = Calendar.from_ical(schedule.read())
-    course_list = []
-    for component in schedule.walk():
-        if component.name == "VEVENT":
-            course_name = component.get("SUMMARY")
-            course_name = str(course_name)
-            if course_name not in course_list and "PREC" not in course_name:
-                course_list.append(course_name)
-
-            day_of_week = component.get("RRULE")
-            day_of_week = dict(day_of_week)
-            day_of_week = str(day_of_week["WKST"])[3:5]
-
-            start_time = component.get('DTSTART').dt
-            start_time = str(start_time)[11:16]
-            end_time = component.get('DTEND').dt
-            end_time = str(end_time)[11:16]
-
-            if course_name not in classtimes:
-                classtimes[course_name] = [start_time, end_time]
-            classdays.setdefault(course_name, []).append(day_of_week)
-    all_list.append(course_list)
-    for course in classdays:
-        t = classdays[course]
-        t = list(set(t))
-        classdays[course] = t
-    all_dictionary = {name : all_list}
-    return all_dictionary
+    return schedule
+#     course_list = []
+#     for component in schedule.walk():
+#         if component.name == "VEVENT":
+#             course_name = component.get("SUMMARY")
+#             course_name = str(course_name)
+#             if course_name not in course_list and "PREC" not in course_name:
+#                 course_list.append(course_name)
+# 
+#             day_of_week = component.get("RRULE")
+#             day_of_week = dict(day_of_week)
+#             day_of_week = str(day_of_week["WKST"])[3:5]
+# 
+#             start_time = component.get('DTSTART').dt
+#             start_time = str(start_time)[11:16]
+#             end_time = component.get('DTEND').dt
+#             end_time = str(end_time)[11:16]
+# 
+#             if course_name not in classtimes:
+#                 classtimes[course_name] = [start_time, end_time]
+#             classdays.setdefault(course_name, []).append(day_of_week)
+#     all_list.append(course_list)
+#     for course in classdays:
+#         t = classdays[course]
+#         t = list(set(t))
+#         classdays[course] = t
+#     all_dictionary = {name : course_list}
+#     return all_dictionary
 
 
 #test is a dict in the format {class:[ppl in class]}

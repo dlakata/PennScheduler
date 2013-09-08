@@ -1,7 +1,7 @@
 import os
 from flask import Flask, render_template, redirect, request, url_for, send_from_directory
 from werkzeug.utils import secure_filename
-from icalendar import Calendar
+from icalendar import Calendar, Event
 
 app = Flask(__name__)
 app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
@@ -38,6 +38,10 @@ def about():
 def help_page():
     return render_template('help.html')
 
+@app.errorhandler(500)
+def too_few(e):
+    return render_template('too_few.html'), 500
+
 UPLOAD_FOLDER = r'C:\Users\David\Documents\GitHub\PennScheduler\static\img\schedules'
 ALLOWED_EXTENSIONS = set(['txt', 'png', 'jpg', 'jpeg', 'gif', 'ics'])
 
@@ -51,12 +55,15 @@ def allowed_file(filename):
 def upload_file():
     if request.method == 'POST':
         numEntries = request.form['id']
-        name = []
-        schedule = []
+                    
+        d = {}
+#         name = []
+#         schedule = []
         for i in range(0, int(numEntries)):
-            name.append(request.form["fullname-" + str(i+1)])
-            schedule.append((request.files['file-' + str(i+1)]).stream.read())
-        return schedule[0]
+#            name.append(request.form["fullname-" + str(i+1)])
+#            schedule.append((request.files['file-' + str(i+1)]).stream.read())
+            d[request.form["fullname-" + str(i+1)]] = (request.files['file-' + str(i+1)]).stream.read()
+        print d
 #         name1 = request.form['name1']
 #         schedule1 = request.files['file1']
 #         name2 = request.form['name2']
@@ -78,8 +85,6 @@ def upload_file():
 #             print name[i]
 #         schedule1 = schedule1.stream.read()
 #         schedule2 = schedule2.stream.read()
-        
-        return schedule[1] + schedule[2]
 #         schedule1 = Calendar.from_ical(schedule1)
 #         schedule2 = Calendar.from_ical(schedule2)
 #         
