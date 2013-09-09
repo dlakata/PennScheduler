@@ -10,27 +10,27 @@ app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
 def page_not_found(e):
     return render_template('404.html'), 404
 
-@app.route('/')
-def home():
-    return render_template('index.html')
+# @app.route('/')
+# def home():
+#     return render_template('index.html')
 
-@app.route('/index.html')
+@app.route('/')
 def index():
     return render_template('index.html')
 
-@app.route('/schedule.html')
+@app.route('/schedule')
 def schedule():
     return render_template('schedule.html')
 
-@app.route('/humans.html')
+@app.route('/humans')
 def humans():
     return render_template('humans.html')
 
-@app.route('/contact.html')
+@app.route('/contact')
 def contact():
     return render_template('contact.html')
 
-@app.route('/about.html')
+@app.route('/about')
 def about():
     return render_template('about.html')
 
@@ -39,7 +39,7 @@ def about():
 def render(shared=None, free=None):
     return render_template('render.html', shared=shared, free=free)
 
-@app.route('/help.html')
+@app.route('/help')
 def help_page():
     return render_template('help.html')
 
