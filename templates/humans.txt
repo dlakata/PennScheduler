@@ -6,7 +6,6 @@
     Adel Qalieh -- Front End -- @adelq
     Prakhar Bhandari -- Python Backend -- @pbjr23
     David Lakata -- Database and Django -- @dlakata
-    Darshan Lingaraj -- APIs -- @dling?
 
 # THANKS
 
