@@ -18,18 +18,18 @@
 	<script>
 	  $(document).ready(function() {
 	  // page now ready
-	  nate = [{{ shared | safe }}]
-	  furp = [{{ free | safe }}]
+	  shared = [{{ shared | safe }}]
+	  free = [{{ free | safe }}]
 
 		$('#free').click(function() {
-			$('#calendar').fullCalendar( 'removeEventSource', nate);
-			$('#calendar').fullCalendar( 'addEventSource', furp);
+			$('#calendar').fullCalendar( 'removeEventSource', shared);
+			$('#calendar').fullCalendar( 'addEventSource', free);
 			$('#shared').removeClass('active');
 			$('#free').addClass('active');
 		})
 		$('#shared').click(function() {
-			$('#calendar').fullCalendar( 'removeEventSource', furp);
-			$('#calendar').fullCalendar( 'addEventSource', nate);
+			$('#calendar').fullCalendar( 'removeEventSource', free);
+			$('#calendar').fullCalendar( 'addEventSource', shared);
 			$('#shared').addClass('active');
 			$('#free').removeClass('active');
 		})
@@ -60,7 +60,7 @@
 		  events : [
 		  ]
 		})
-	  $('#calendar').fullCalendar( 'addEventSource', nate);
+	  $('#calendar').fullCalendar( 'addEventSource', shared);
 	  });
 	</script>
 {% endblock %}
