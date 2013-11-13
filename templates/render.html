@@ -7,7 +7,6 @@
 	  <button type="button" class="btn btn-default btn-lg" id="free">Free Time</button>
 	</div>
 	<div id="calendar"></div>
-	<!-- <a class="download_link">Download now</a> -->
 	  </div>
 	</div>
   </div>
@@ -33,12 +32,6 @@
 			$('#shared').addClass('active');
 			$('#free').removeClass('active');
 		})
-		// $('.download_link').click(function() {
-		// 	$('#calendar').css({
-		// 		'font-size': '20px',
-		// 		font-family: 'Open Sans'
-		// 	})
-		// })
 		$('#calendar').fullCalendar({
 		  header: false, // No top title header
 		  defaultView: 'agendaWeek', // Week view
@@ -46,17 +39,11 @@
 		  minTime: 7, // Calendar starts at 8am
 		  maxTime: 22, // Calendar goes up to 10pm
 		  weekends: false, 
-		  //aspectRatio: 5, // Make calendar more horizontally compact
 		  columnFormat: 'ddd', // hide number of day and month
 		  year: 2013,
 		  month: 8,
 		  date: 7,
 		  height: 670,
-			// eventRender: function(event, element) {
-			// 	element.qtip({
-			// 		content: event.description
-			// 	});
-			// }
 		  events : [
 		  ]
 		})
