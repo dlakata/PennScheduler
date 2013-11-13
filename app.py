@@ -48,7 +48,7 @@ def too_few(e):
     return render_template('too_few.html'), 500
 
 UPLOAD_FOLDER = r'C:\Users\David\Documents\GitHub\PennScheduler\static\img\schedules'
-ALLOWED_EXTENSIONS = set(['txt', 'png', 'jpg', 'jpeg', 'gif', 'ics'])
+ALLOWED_EXTENSIONS = set(['txt', 'ics'])
 
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
