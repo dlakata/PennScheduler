@@ -1,4 +1,8 @@
 def list_of_colors(num):
+    """
+    Takes in number of wanted colors and returns list of colors.
+    Valid number of colors must be >1 and <10
+    """
     if num == 2:
         return ["#FFF7FB", "#3690C0"]
     if num == 3:
