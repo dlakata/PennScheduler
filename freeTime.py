@@ -199,6 +199,10 @@ def generalFreetime(freetimeDict):
 	return freetimeDatabase
 
 def freeFormat(listlist):
+	"""
+	Return list of times as JSON
+	Compatible with fullCalendar.js
+	"""
 	final = ""
 	for block in listlist:
 		final += "{ title: '%s', start:'%s', end:'%s', allDay: false, backgroundColor:'%s', description:'fur'},\n" % (block[0], block[1][0], block[1][1], colors.choose_color(block[0].count(',')+1,block[2]))
