@@ -1,7 +1,6 @@
-import os, freeTime, sharedclass
+import freeTime, sharedclass
 from flask import Flask, render_template, redirect, request, url_for, send_from_directory
 from werkzeug.utils import secure_filename
-from icalendar import Calendar, Event
 
 app = Flask(__name__)
 app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
