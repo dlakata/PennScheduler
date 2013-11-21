@@ -18,7 +18,7 @@ Python, Flask
 
 Getting Started
 ---------------
-1. Install virtualenv on your computer
+1. Install [virtualenv](http://www.virtualenv.org/) on your computer
 2. Create a virtualenv for PennScheduler
 
 ```
@@ -30,7 +30,7 @@ $ virtualenv pennscheduler
 $ cd pennscheduler
 $ source bin/activate
 ```
-6. Install Python module dependencies, namely `Flask` and `icalendar`
+4. Install Python module dependencies, namely `Flask` and `icalendar`
 
 ```
 $ pip install flask icalendar
