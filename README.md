@@ -21,27 +21,27 @@ Getting Started
 1. Install [virtualenv](http://www.virtualenv.org/) on your computer
 2. Create a virtualenv for PennScheduler
 
-```
-$ virtualenv pennscheduler
-```
+    ```
+    $ virtualenv pennscheduler
+    ```
 3. Activate virtualenv
 
-```
-$ cd pennscheduler
-$ source bin/activate
-```
+    ```
+    $ cd pennscheduler
+    $ source bin/activate
+    ```
 4. Install Python module dependencies, namely `Flask` and `icalendar`
 
-```
-$ pip install flask icalendar
-```
+    ```
+    $ pip install flask icalendar
+    ```
 5. Clone git repository into directory
 
-```
-$ git clone https://github.com/dlakata/PennScheduler.git
-```
+    ```
+    $ git clone https://github.com/dlakata/PennScheduler.git
+    ```
 6. Start server
 
-```
-$ python PennScheduler/app.py
-```
+    ```
+    $ python PennScheduler/app.py
+    ```
