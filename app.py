@@ -1,4 +1,5 @@
-import freeTime, sharedclass
+import freeTime
+import sharedclass
 from flask import Flask, render_template, redirect, request, url_for, send_from_directory
 from werkzeug.utils import secure_filename
 
@@ -74,4 +75,4 @@ def uploaded_file(filename):
                                filename)
     
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
