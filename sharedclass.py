@@ -58,7 +58,6 @@ def shared(dictionary):
 		if len(students[course]) > 1:
 			# print prettyCourseName(course), students[course], classtimes[course], classdays[course]
 			for day in classdays[course]:
-				print(day)
 				final += "{ title: '%s (%s)', start:'2013-09-%s %s:00', end:'2013-09-%s %s:00', allDay: false},\n" % (prettyCourseName(course), ", ".join(students[course]), weekdays(day), classtimes[course][0], weekdays(day), classtimes[course][1])
 	return final[:-2]
 # Main function: shared

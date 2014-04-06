@@ -1,10 +1,11 @@
 import freeTime
 import sharedclass
-from flask import Flask, render_template, redirect, request, url_for, send_from_directory
+from flask import Flask, render_template, redirect, request, url_for, send_from_directory, session
 from werkzeug.utils import secure_filename
 
 app = Flask(__name__)
 app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
+app.secret_key = "P+zg!FH[KfxWk6e.2MT_"
 
 @app.errorhandler(404)
 def page_not_found(e):
@@ -31,9 +32,8 @@ def about():
     return render_template('about.html')
 
 @app.route('/render')
-@app.route('/render/<shared>/<free>')
-def render(shared=None, free=None):
-    return render_template('render.html', shared=shared, free=free)
+def render():
+    return render_template('render.html', shared=session['shared'], free=session['free'])
 
 @app.route('/help')
 def help_page():
@@ -62,7 +62,9 @@ def upload_file():
             d[request.form["fullname-" + str(i+1)]] = (request.files['file-' + str(i+1)]).stream.read()
         shared = sharedclass.shared(d)
         free = freeTime.freeFormat(freeTime.generalFreetime(freeTime.free_time_parse(d)))
-        return redirect(url_for('render', shared=shared, free=free))
+        session['shared'] = shared
+        session['free'] = free
+        return redirect(url_for('render'))
     return render_template('upload.html')
 
 @app.route('/upload/<f>')
@@ -75,4 +77,4 @@ def uploaded_file(filename):
                                filename)
     
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
