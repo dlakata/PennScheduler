@@ -31,7 +31,7 @@ def shared(dictionary):
 
 				day_of_week = component.get("RRULE")
 				day_of_week = dict(day_of_week)
-				day_of_week = str(day_of_week["WKST"])[3:5]
+				day_of_week = str(day_of_week["WKST"])[2:4]
 
 				start_time = component.get('DTSTART').dt
 				start_time = str(start_time)[11:16]
@@ -58,6 +58,7 @@ def shared(dictionary):
 		if len(students[course]) > 1:
 			# print prettyCourseName(course), students[course], classtimes[course], classdays[course]
 			for day in classdays[course]:
+				print(day)
 				final += "{ title: '%s (%s)', start:'2013-09-%s %s:00', end:'2013-09-%s %s:00', allDay: false},\n" % (prettyCourseName(course), ", ".join(students[course]), weekdays(day), classtimes[course][0], weekdays(day), classtimes[course][1])
 	return final[:-2]
 # Main function: shared

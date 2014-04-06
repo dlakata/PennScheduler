@@ -24,7 +24,7 @@ def time_analyze(time):
 		return 204
 	hour = int(time[0:2])
 	hour = (hour - 7) * 12
-	minutes = int(time[-2:]) / 5
+	minutes = int(time[-2:]) // 5
 	return hour + minutes
 
 def two_times(time1,time2):
@@ -62,7 +62,7 @@ def final_time_range(time1,time2,day):
 def rev_time_analyze(numb):
 	if numb == 204:
 		return "22:00:00"
-	hour = (numb / 12) + 7
+	hour = (numb // 12) + 7
 	minutes = (numb % 12) * 5
 	if len(str(hour)) == 1:
 		hour = "0" + str(hour)
@@ -100,16 +100,16 @@ def freetime(freetimeDict):
 	for value in freetimeDict:
 		freetimeDict[value] = set(freetimeDict[value])
 
-	print "Common to everybody:"
+	print("Common to everybody:")
 	set3 = freetimeDict.values()[0] & freetimeDict.values()[1] & freetimeDict.values()[2]
-	print set3
+	print(set3)
 
-	print "Common to 2 people:"
+	print("Common to 2 people:")
 	# for double in combinations(freetimeDict.values(), 2):
 	# 	print (double[0] & double[1]) - set3
 	for double in combinations(freetimeDict.items(), 2):
-		print double[0][0], double[1][0]
-		print (double[0][1] & double[1][1]) - set3
+		print(double[0][0], double[1][0])
+		print((double[0][1] & double[1][1]) - set3)
 
 def firstTuple(dictionaryTuple):
 	setList = []
@@ -128,8 +128,8 @@ def rangeMaker(timeRange):
 	timeRange.sort()
 
 	timeRangesList = []
-	for k, g in groupby(enumerate(timeRange), lambda (i,x):i-x):
-		ranges = map(itemgetter(1), g)
+	for k, g in groupby(enumerate(timeRange), lambda i_x:i_x[0]-i_x[1]):
+		ranges = list(map(itemgetter(1), g))
 		timeRangesList.append([ranges[0],ranges[-1]])
 	return timeRangesList
 
@@ -151,7 +151,7 @@ def free_time_parse(dictionary):
 
 				day_of_week = component.get("RRULE")
 				day_of_week = dict(day_of_week)
-				day_of_week = str(day_of_week["WKST"])[3:5]
+				day_of_week = str(day_of_week["WKST"])[2:4]
 
 				start_time = component.get('DTSTART').dt
 				start_time = str(start_time)[11:16]
