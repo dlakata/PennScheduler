@@ -1,5 +1,7 @@
 from icalendar import Calendar
 
+JSON_EVENT = "{ title: '{} ({})', start:'2013-09-{} {}:00', end:'2013-09-{} {}:00', allDay: false},\n"
+
 def prettyCourseName(course):
 	course = course[:-3]
 	if course[-4] == " ":
@@ -55,5 +57,11 @@ def shared(dictionary):
 	for course in students:
 		if len(students[course]) > 1:
 			for day in classdays[course]:
-				final += "{ title: '%s (%s)', start:'2013-09-%s %s:00', end:'2013-09-%s %s:00', allDay: false},\n" % (prettyCourseName(course), ", ".join(students[course]), weekdays(day), classtimes[course][0], weekdays(day), classtimes[course][1])
+				final += JSON_EVENT.format(
+					prettyCourseName(course),
+					", ".join(students[course]),
+					weekdays(day),
+					classtimes[course][0],
+					weekdays(day),
+					classtimes[course][1])
 	return final[:-2]

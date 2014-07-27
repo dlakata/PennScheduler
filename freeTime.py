@@ -3,6 +3,8 @@ from itertools import combinations, groupby
 from operator import itemgetter
 from icalendar import Calendar
 
+JSON_EVENT = "{ title: '{}', start:'{}', end:'{}', allDay: false, backgroundColor:'{}'},\n"
+
 def time_analyze(time):
 	"""
 	Time documentation
@@ -179,5 +181,9 @@ def freeFormat(listlist):
 	"""
 	final = ""
 	for block in listlist:
-		final += "{ title: '%s', start:'%s', end:'%s', allDay: false, backgroundColor:'%s'},\n" % (block[0], block[1][0], block[1][1], colors.choose_color(block[0].count(',')+1,block[2]))
+		final += JSON_EVENT.format(
+			block[0],
+			block[1][0],
+			block[1][1],
+			colors.choose_color(block[0].count(',')+1,block[2]))
 	return final[:-2]
