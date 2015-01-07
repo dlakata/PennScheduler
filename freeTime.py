@@ -3,7 +3,7 @@ from itertools import combinations, groupby
 from operator import itemgetter
 from icalendar import Calendar
 
-JSON_EVENT = "{ title: '{}', start:'{}', end:'{}', allDay: false, backgroundColor:'{}'},\n"
+JSON_EVENT = "{{ title: '{}', start:'{}', end:'{}', allDay: false, backgroundColor:'{}'}},\n"
 
 def time_analyze(time):
 	"""
@@ -127,9 +127,7 @@ def free_time_parse(dictionary):
 				course_name = component.get("SUMMARY")
 				course_name = str(course_name)
 
-				day_of_week = component.get("RRULE")
-				day_of_week = dict(day_of_week)
-				day_of_week = str(day_of_week["WKST"])[2:4]
+				day_of_week = str(component.get("RRULE")['BYDAY'][0])
 
 				start_time = component.get('DTSTART').dt
 				start_time = str(start_time)[11:16]

@@ -1,6 +1,6 @@
 from icalendar import Calendar
 
-JSON_EVENT = "{ title: '{} ({})', start:'2013-09-{} {}:00', end:'2013-09-{} {}:00', allDay: false},\n"
+JSON_EVENT = "{{ title: '{} ({})', start:'2013-09-{} {}:00', end:'2013-09-{} {}:00', allDay: false}},\n"
 
 def prettyCourseName(course):
 	course = course[:-3]
@@ -29,9 +29,7 @@ def shared(dictionary):
 				if course_name not in temp_list and "PREC" not in course_name:
 					temp_list.append(course_name)
 
-				day_of_week = component.get("RRULE")
-				day_of_week = dict(day_of_week)
-				day_of_week = str(day_of_week["WKST"])[2:4]
+				day_of_week = str(component.get("RRULE")['BYDAY'][0])
 
 				start_time = component.get('DTSTART').dt
 				start_time = str(start_time)[11:16]
